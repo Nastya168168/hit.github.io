@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/my.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- шапка -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="files/logo.png" alt="..."></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="/">Home</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li> -->
+            <li class="nav-item">
+              <a class="nav-link active" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">
+                <img style="width: 35px; margin-inline: 1em;" src="C:\Обучение\Проект сайта\bs5\source\images\yt.png"
+                  alt="">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">
+                <img style="width: 30px; margin-inline: 1em;" src="C:\Обучение\Проект сайта\bs5\source\images\tg.png"
+                  alt="">
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- основной контент -->
+  <section>
+    <!-- контейнер флюид- взяли с бутстрапа, где уже заданы стили (см. на сайте столбец
+      параметров) -->
+    <!-- m-4 - это класс, уже готовый в бутстрапе, значения все указаны на сайте
+      здесь мы делаем отступ сверху на 4em -->
+    <div class="container-fluid mt-4">
+      <!-- создаем отдельный контейнер,чтобы расположить блоки по столбцам -->
+      <div class="row">
+        <!-- здесь левый блок будет занимать ровно один столбец -->
+        <div class="col-lg-1">
+        </div>
+        <!-- а здесь будет занимать 8 столбцом. То есть, если мы
+        перетащим наши карточки сюда, информация будет отображаться во втором блоке 
+      на ширине 8 столбцов -->
+        <div class="col-lg-8 col-md-12">
+          <div class="row">
+            <!-- col-lg-4 (означает, что на больших экранах карточка занимает 4 столбца,
+            и будет по 3 карты в строку,
+            на размере медиум, например, планшет-6 столбцов, а значит- 2 карточки в строку) 
+            (см. layot-grid-grid options)-->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <a href="#"><img src="images/laptop.png" class="card-img-top" alt="Laptop"></a>
+                <div class="card-body">
+                  <h5 class="card-title"><a href="#">Laptops</a></h5>
+                  <p class="card-text"><a href="#">
+                      Some quick example text to build on the card title and make up the bulk of the
+                      card's
+                      content.
+                    </a></p>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <img src="images/gaming pc.png" class="card-img-top" alt="Gaming PC">
+                <div class="card-body">
+                  <h5 class="card-title">Gaming PC</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <img src="images/vr.png" class="card-img-top" alt="VR">
+                <div class="card-body">
+                  <h5 class="card-title">VR</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <img src="images/acc.png" class="card-img-top" alt="Keyboards">
+                <div class="card-body">
+                  <h5 class="card-title">Keyboards</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <img src="images/cpu.png" class="card-img-top" alt="CPU">
+                <div class="card-body">
+                  <h5 class="card-title">CPU</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <img src="images/controller.png" class="card-img-top" alt="Consoles">
+                <div class="card-body">
+                  <h5 class="card-title">Consoles</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <img src="images/gpu.png" class="card-img-top" alt="Acoustic system">
+                <div class="card-body">
+                  <h5 class="card-title">Acoustic system</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <img src="images/other.png" class="card-img-top" alt="Other">
+                <div class="card-body">
+                  <h5 class="card-title">Other</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+          <div class="col-lg-12 col-md-12 text-center mt-4">
+            <button type="button" class="btn btn-primary btn-lg my-4">Primary</button>
+          </div>
+          <!-- Ниже пишем col-lg-12
+          это значит, что этот див будет занимать 12 долей row, а
+        row занимает у нас 8 долей (информация выше) -->
+          <div class="col-lg-12 col-md-12 text-center mt-4">
+            <p class="can">Can we help you?</p>
+          </div>
+          <div class="col-lg-12 col-md-12 text-center mt-4">
+            <img class="call-anim" style="width: 40px;" src="C:\Обучение\Проект сайта\bs5\source\images\phone.png"
+              alt="">
+          </div>
+
+        </div>
+        <!-- А здесь остается правый блок, занимающий ширину в три столбца, куда
+      мы можем помещать любую информацию, так же и в первом блоке на 1 столбец шириной
+    Закончила на 5.41.54 -->
+        <div class="col-lg-3 col-md-12">
+          <div class="row px-2">
+            <div class="col-lg-12 sidebar my-3">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis enim dolorem temporibus facilis ad
+                possimus! <a href="#">Learn more>>></a></p>
+            </div>
+            <div class="col-lg-12 sidebar my-3">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis enim dolorem temporibus facilis ad
+                possimus! <a href="#">Learn more>>></a></p>
+            </div>
+            <div class="col-lg-12 sidebar my-3">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis enim dolorem temporibus facilis ad
+                possimus! <a href="#">Learn more>>></a></p>
+            </div>
+            <div class="col-lg-12 sidebar my-3">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis enim dolorem temporibus facilis ad
+                possimus! <a href="#">Learn more>>></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- служебная информация -->
+  <!-- mt-4 = расстояние между служебной информацией и вторым блоком -->
+  <footer class="mt-4">
+    <div class="container-fluid">
+      <div class="row backgr">
+        <div class="col-lg-4 col-md-12 textdown text-center">
+          <p>All rights reserved 2022</p>
+        </div>
+        <div class="col-lg-4 col-md-12 textdown text-center">
+          <p>Contacts<br>Job<br>Our team</p>
+        </div>
+        <div class="col-lg-4 col-md-12 media-links">
+          <img style="width: 40px; margin-inline: 1em;" src="C:\Обучение\Проект сайта\bs5\source\images\yt.png" alt="">
+          <img style="width: 40px; margin-inline: 1em;" src="C:\Обучение\Проект сайта\bs5\source\images\tg.png" alt="">
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- вставляем в конце это подключение к джс, чтобы не занимало загрузку
+    сайта, а загрузилось после всего -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
